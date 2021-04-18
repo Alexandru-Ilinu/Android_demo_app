@@ -16,7 +16,7 @@ public class MyAndroidViewModel extends AndroidViewModel
     {
         super(application);
         counter = new MutableLiveData<>(startValue);
-        repository = new Repository(application);
+        repository = new InternalFileRepository(application);
     }
 
     public void increment()

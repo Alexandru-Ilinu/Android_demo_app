@@ -10,14 +10,14 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Repository
+public class InternalFileRepository implements Repository
 {
 
     private static final String NUMBER_FILE_NAME = "number";
 
     private File numberFile;
 
-    public Repository(Application application)
+    public InternalFileRepository(Application application)
     {
         File appDir = application.getFilesDir();
         numberFile = new File(appDir, NUMBER_FILE_NAME);
