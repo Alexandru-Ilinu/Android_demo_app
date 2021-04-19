@@ -11,6 +11,6 @@ public class WriteException extends GeneralException
 
     public String getDescription()
     {
-        return "Eroare la scriere. Detalii eroare: [" + innerException.getMessage() + "]";
+        return "Error on writing. Error details: [" + innerException.getMessage() + "]";
     }
 }
